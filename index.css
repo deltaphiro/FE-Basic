@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: rgb(228, 228, 228);
+  padding: 8px 24px 8px 24px;
+}
+
+header ul {
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #252525;
+  padding:16px 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+nav ul li {
+  display: inline-flex;
+  margin-left: 8px;
+}
+
+.logo {
+  width: 24px;
+  height: fit-content;
+  color: white;
+}
+
+#our-logo {
+  width: 64px;
+  height: fit-content;
+}
+.container {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  gap: 3vh;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: rgba(224, 224, 224, 0.726) 2px 2px 8px;
+}
+
+#foto {
+  width: 25%;
+  height: fit-content;
+  border-radius: 8px;
+}
+
+.nama {
+  font-size: 4vh;
+  font-weight: 700;
+}
+
+.alamat, .pekerjaan {
+  font-size: 2.5vh;
+  color: #555555;
+}
+
+.bio {
+  margin-top: 12px;
+  text-align: justify;
+}
+
+.sidebar {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: rgba(224, 224, 224, 0.726) 2px 2px 8px;
+}
+
+table {
+  border: solid #252525 1px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 6px;
+}
+
+td, th {
+  text-align: left;
+  border: none;
+  border-radius:5px 5px 0px 0px;
+  border-bottom: solid #252525 1px;
+  padding: 6px;
+}
+
+tr:last-child td:first-child{
+  border-bottom: none;
+}
+th {
+  background-color: #252525;
+  color: aliceblue;
+}
+
+footer {
+  background-color: #555555;
+  color: aliceblue;
+  padding: 24px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 720px) {
+  header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .cta {
+    content-visibility: hidden;
+  }
+
+  #foto {
+    width: auto;
+  }
+}
